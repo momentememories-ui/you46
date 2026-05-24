@@ -151,7 +151,7 @@
     <audio id="bg-music" src="song.mp3" loop autoplay></audio>
 
     <!-- เปลี่ยนข้อความเริ่มต้นเป็นภาษาอังกฤษ -->
-    <h1 id="status-text">Could you please water this little plant for me?🌱</h1>
+    <h1 id="status-text">Could you please water \nthis little plant for me?🌱</h1>
 
     <div id="plant-container">
         <img id="main-plant-img" src="stage1.png">
@@ -235,13 +235,13 @@
             
             // เปลี่ยนเงื่อนไขข้อความแสดงผลเป็นภาษาอังกฤษทั้งหมด
             if (count <= 20) {
-                statusText.innerText = `Yay! Thank you for watering me, I'm starting to grow! (${count}%)`;
+                statusText.innerText = `Yay! Thank you for watering me. \nI'm starting to grow! (${count}%)`;
             } else if (count <= 40) {
-                statusText.innerText = `Thank you for taking such sweet care of me! (${count}%)`;
+                statusText.innerText = `Thank you for taking \nsuch sweet care of me! (${count}%)`;
             } else if (count <= 60) {
-                statusText.innerText = `Our plant is growing beautifully with your love! (${count}%)`;
+                statusText.innerText = `Our plant is growing beautifully \nwith your love! (${count}%)`;
             } else if (count <= 80) {
-                statusText.innerText = `Just a little more, our plant is almost perfect! (${count}%)`;
+                statusText.innerText = `Just a little more. \nour plant is almost perfect! (${count}%)`;
             } else {
                 statusText.innerText = `Almost there! Our plant is fully blooming! (${count}%)`;
             }
